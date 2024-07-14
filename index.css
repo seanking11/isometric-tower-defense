@@ -1,0 +1,23 @@
+canvas {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid black;
+  position: relative;
+  z-index: 0;
+}
+#coinScore {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 1; /* Ensure the score is above the canvas */
+}
+body {
+  margin: 0;
+  overflow: hidden;
+}

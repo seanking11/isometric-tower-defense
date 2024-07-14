@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isometric Tower Defense</title>
+    <style>
+      canvas {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid black;
+        position: relative;
+        z-index: 0;
+      }
+      #coinScore,
+      #lifeScore {
+        position: absolute;
+        top: 10px;
+        font-size: 20px;
+        font-family: Arial, sans-serif;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        z-index: 1; /* Ensure the score is above the canvas */
+      }
+      #coinScore {
+        left: 10px;
+      }
+      #lifeScore {
+        right: 10px;
+      }
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="coinScore">Coins: 0</div>
+    <div id="lifeScore">Lives: 10</div>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script src="index.js"></script>
+  </body>
+</html>
