@@ -178,7 +178,7 @@ function drawElements() {
   });
 }
 
-const towers = [{ x: 0, y: 0, lastShotTime: 0 }];
+const towers = [];
 let enemies = [];
 let projectiles = [];
 let enemyId = 0;
